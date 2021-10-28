@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Cadastro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron" style="background-color:gray clear">
+      <h4>Cadastramento de Usuário</h4>
+    </div>
+     
+    <div class="jumbotron" style="background-color:gray clear">
+		<form class="form-horizontal" action="aluno" method="post">
+
+		    <div class="form-group">
+		      <label class="control-label col-sm-20">Nome</label> 
+		      <input value="junior" type="text" name="nome"class="form-control">
+	        </div> 
+		    
+	        <div class="form-group">
+		      <label class="control-label col-sm-20">E-mail:</label>
+		      <input value= "roso@gmail.com" type="email"class="form-control" name="email"placeholder="Digite seu e-mail">
+	        </div> 
+		    
+		    <div class="form-group">
+		      <label class="control-label col-sm-20">Idade</label>
+		      <input value= "29" type="number"class="form-control" name="idade"placeholder="Digite sua idade">
+	        </div> 
+	        
+	        <div class="form-group">
+		      <label class="control-label col-sm-20">Mensalidade</label>
+		      <input value= "2000" type="number"class="form-control" name="mensalidade"placeholder="Digite sua mensalidade">
+	        </div> 
+	        
+		    <div class="form-group">
+		      <label class="control-label col-sm-20">Escolaridade</label>
+		    </div>
+		    <div class="form-group">        
+	            <label><input checked type="radio"  name= "escolaridade" value= "G"> Graduação </label>
+            </div>
+		    <div class="form-group">        
+	            <label><input type="radio"  name= "escolaridade" value= "E"> Especialização </label>
+            </div>
+		   <div class="form-group">        
+	            <label><input type="radio"  name= "escolaridade" value= "M"> Mestrado </label>
+            </div>
+		    <div class="form-group">        
+	            <label><input type="radio"  name= "escolaridade" value= "D"> Doutorado </label>
+            </div>
+            
+            
+		    <div class="form-group">  
+			    <label class="control-label col-sm-20">Disciplinas</label> 
+			</div> 
+			 <div class="form-group">        
+	            <label><input checked type="checkbox" name= "disciplinas" value= "POO"> Orientação a objetos</label>
+            </div>
+		    <div class="form-group">
+		       <label><input type="checkbox" name= "disciplinas" value= "UML"> UML </label>
+            </div>
+		     <div class="form-group">
+		       <label><input checked type="checkbox"name= "disciplinas" value= "FUN"> Fundamento Java </label>
+            </div>
+		    <div class="form-group">
+		       <label><input type="checkbox" name= "disciplinas" value="BAN"> Banco de dados </label>
+            </div>
+		    
+		    <div class="form-group">  
+			    <label class="control-label col-sm-20">Regiões</label> 
+			    <select name= "regiao" class="form-control">
+				    <option value= "SUL"> Sul</option>
+			        <option value= "SUD"> Sudeste</option>
+	                <option selected value= "NOR"> Norte</option>
+	                <option value= "NORD"> Nordeste</option> 
+	                <option value= "CENT-OEST"> Centro-Oeste</option>
+		        </select>
+		    </div>  
+		    
+		    <button type="submit" class="btn btn-primary">Cadastrar</button>
+		    
+	    </form>
+    </div>
+    </div>
+    
+</body>
+</html>
